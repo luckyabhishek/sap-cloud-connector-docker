@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+  <role rolename="admin"/>
+  <group groupname="initial"/>
+  <user username="Administrator" password="181229424893BB65D94A74C2132B8B9E5ADFE851464FDB5CB9F49E8A8204BE7B" roles="admin"/>
+</tomcat-users>

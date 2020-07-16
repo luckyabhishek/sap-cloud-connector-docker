@@ -1,3 +1,13 @@
+# SAP Cloud Connector in Docker Auto Configure
+This repository is a fork of nzamani/sap-cloud-connector-docker
+The main SAPCC Cloud Connector Docker provides an image which can help run a SAP Cloud Connector inside a docker container. However we can't use it for any kind of test automation setup.
+In order to call any API on the cloud connector 2 things need to be fixed viz.  
+1. You need to change the password. 
+2. You need to set the Instalation Type. 
+
+This image tries to address those issues by copying the users.xml and scc_config.ini. The password for the connector remains the same. And it is set to master as installation type. 
+You can directly start calling APIs after running this image. 
+
 # SAP Cloud Connector in Docker
 
 Easily setup SAPCC in docker.

@@ -74,6 +74,10 @@ EXPOSE 8443
 USER sccadmin
 WORKDIR /opt/sap/scc
 
+# Replace the files
+COPY users.xml /opt/sap/scc/config/users.xml
+COPY scc_config.ini /opt/sap/scc/scc_config/scc_config.ini
+
 # finally run sapcc as PID 1
 
 # For Oracle JDK use this command:
